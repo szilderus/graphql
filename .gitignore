@@ -1,0 +1,12 @@
+.idea/
+.babel_cache/
+.cache-loader/
+.parcelrc
+.eslintcache
+docs/
+coverage/
+test-results.xml
+dist/
+yarn.lock
+node_modules
+package-lock.json
