@@ -7,11 +7,11 @@ const typeDefs = gql`
         interestingUrls: [String]
 
     }
-s`;
+`;
 
 
 const data ={
-    greeting : "hello world",
+    greeting : "hello worlddd",
     interestingUrls : ["http://google.com", "http://onet.pl"]
 
 }
