@@ -1,8 +1,9 @@
 const { ApolloServer, gql} = require('apollo-server');
 
+const PORT = process.env.port || 4000
 const typeDefs = gql`
     type Query {
-        Greeting: String
+        greeting: String
         interestingUrls: [String]
 
     }
@@ -17,4 +18,4 @@ const data ={
 
 const server = new ApolloServer({ typeDefs, rootValue: data});
 
-server.listen({port : 4000}).then( (result) => { console.log(result.url) } );
+server.listen({port : PORT}).then( (result) => { console.log(result.url) } );
