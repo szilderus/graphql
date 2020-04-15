@@ -7,7 +7,7 @@ const typeDefs = gql`
         interestingUrls: [String]
 
     }
-`;
+s`;
 
 
 const data ={
@@ -16,6 +16,6 @@ const data ={
 
 }
 
-const server = new ApolloServer({ typeDefs, rootValue: data});
+const server = new ApolloServer({ typeDefs, playground: true, introspection: true, rootValue: data});
 
 server.listen({port : PORT}).then( (result) => { console.log(result.url) } );
